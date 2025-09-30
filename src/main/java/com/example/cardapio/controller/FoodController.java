@@ -25,7 +25,7 @@ public class FoodController {
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @PostMapping
-    public void saveFodd(@RequestBody FoodRequestDTO data) {
+    public void saveFood(@RequestBody FoodRequestDTO data) {
         Food foodData = new Food(data);
         repository.save(foodData);
     }
